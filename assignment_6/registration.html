@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <!-- Page Heading -->
+    <h1>User Registration</h1>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="registration.html">Registration</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <hr>
+
+    <!-- Registration Form -->
+    <form>
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text"
+               id="fullname"
+               name="fullname"
+               placeholder="Enter your full name"
+               required>
+        <br><br>
+
+        <!-- Email Address -->
+        <label for="email">Email Address:</label><br>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter your email"
+               required>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               placeholder="Enter your phone number"
+               required>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date"
+               id="dob"
+               name="dob"
+               required>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+
+        <input type="radio"
+               id="male"
+               name="gender"
+               value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio"
+               id="female"
+               name="gender"
+               value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio"
+               id="other"
+               name="gender"
+               value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Hobbies -->
+        <label>Hobbies:</label><br>
+
+        <input type="checkbox"
+               id="reading"
+               name="hobbies"
+               value="Reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox"
+               id="music"
+               name="hobbies"
+               value="Music">
+        <label for="music">Music</label>
+
+        <input type="checkbox"
+               id="sports"
+               name="hobbies"
+               value="Sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox"
+               id="travel"
+               name="hobbies"
+               value="Travel">
+        <label for="travel">Travel</label>
+
+        <br><br>
+
+        <!-- Country Dropdown -->
+        <label for="country">Country:</label><br>
+
+        <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Enter your password"
+               required>
+
+        <br><br>
+
+        <!-- Form Buttons -->
+        <input type="reset" value="Reset">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
