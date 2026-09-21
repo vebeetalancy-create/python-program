@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="profile">
+
+    <img src="{% static 'images/profile.jpg' %}"
+         alt="Profile Picture"
+         class="profile-image">
+
+    {% if resume.gender == "Male" %}
+        <h2>👨 {{ resume.name }}</h2>
+    {% elif resume.gender == "Female" %}
+        <h2>👩 {{ resume.name }}</h2>
+    {% else %}
+        <h2>🧑 {{ resume.name }}</h2>
+    {% endif %}
+
+</div>
+
+<p><strong>Age:</strong> {{ resume.age }}</p>
+
+<p><strong>Email:</strong> {{ resume.email }}</p>
+
+<hr>
+
+<h3>Skills</h3>
+
+<ul>
+    {% for skill in resume.skills %}
+        <li>{{ skill }}</li>
+    {% endfor %}
+</ul>
+
+<hr>
+
+<h3>Education</h3>
+
+<ul>
+    {% for key, value in resume.education.items %}
+        <li>
+            <strong>{{ key }}</strong> : {{ value }}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
